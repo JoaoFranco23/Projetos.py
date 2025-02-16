@@ -1,6 +1,9 @@
 #importando uma interface tkinter
 from tkinter import * 
 from tkinter import ttk
+from tkinter import Frame
+from tkinter import Entry
+from tkinter import Label
 
 Login = Tk() 
 
@@ -19,7 +22,10 @@ class Application():
         self.Login = Label(Login, text="Login", background='lightblue', font=("Arial", 20)).pack() #Nesta variavel, definimos um titulo dentro do card
         
         #Frame para criarmos o card, login de acesso do usuario 
-        def login_frame(self):
-            self.frame_Email = Frame(self.Login)
+        Email = Frame(Login, bg="lightblue", bd=2, relief="groove")
+        Email = Entry(Login, textvariable= "Informe o email")
+        Email.place(relx=0.2, rely=0.2, relwidth=0.6, relheight=0.07)
         
+        def frame_senha_tela(self):
+            
 Application()
